@@ -20,8 +20,8 @@ console.log(arrFour);
 let arrcardRev = arrCard.reverse().map(i => +i);
 console.log(arrcardRev);
 
-let arrMaestro = ['5018', '5020', '5038', '5893', '6304', '6759', '6761', '6762', '6763'];
-let start = '5018';
+let arrMaestro = ['5018', '0604', '5020', '5038', '5893', '6304', '6759', '6761', '6762', '6763'];
+
 
 let sum = 0;
 
@@ -46,7 +46,7 @@ if(card.length >= 13 && card.length <= 19 && arrBin[0] == 4 && isCorrect == true
 
     console.log(`Карта принадлежит платежной системе American Express`);
 
-}else if(card.length >= 16 && card.length <= 19 && (arrMaestro.includes(start)) && isCorrect == true){
+}else if(card.length >= 16 && card.length <= 19 && (arrMaestro.includes(arrFour)) && isCorrect == true){
 
     console.log(`Карта принадлежит платежной системе Maestro`);
 
